@@ -1,0 +1,69 @@
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.card_image {
+    width:200px;
+    height:300px;
+    border: 1px solid gray;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex; /* Add this */
+    justify-content: center; /* Add this if you want to center the button horizontally */
+    align-items: flex-end; /* Add this to align the button to the bottom */
+    padding: 10px; 
+    position: relative; 
+}
+
+.card_image ul {
+    position: absolute; /* Add this */
+    top: 10px; /* Add this */
+    right: 10px; /* Add this */
+    list-style: none; /* Add this */
+    display: flex; /* Add this */
+    flex-direction: column;
+    gap: 10px; /* Add this */
+}
+
+.card_image ul li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_image button {
+    display: none; /* Add this */
+}
+
+.card_image:hover button {
+    display: block; /* Add this */
+}
+.card_btn:hover{
+    background-color: white;
+    width:150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.name{
+    font-size: 16px;
+    font-weight: 600;
+}
+.desc{
+    font-size: 14px;
+    font-weight: 400;
+}
+.price {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin: 10px 0px 0px -40px;
+
+}

@@ -1,0 +1,59 @@
+.section_div {
+    padding: 20px;
+    height: 550px;
+    background-image: url("/images/h_image.webp");
+    background-position: right center; /* This positions the image to the right */
+    background-size: contain; /* This makes the image fit within the container */
+    background-repeat: no-repeat;
+    background-color: #F3f3f3;
+  }
+  .first {
+    margin : 150px 0px 0px 150px;
+    width: 50%;
+  }
+  .first h1 {
+    font-size: 40px;
+    margin: 0px;
+  }
+  .first h3 h5 {
+    margin:0px;
+  }
+  .first button {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 768px) {
+    .section_div {
+      height: auto;
+      padding: 0px;
+      background-image: url("/assets/h_image.png");
+      background-position: bottom center; /* This positions the image to the right */
+      background-size: contain; /* This makes the image fit within the container */
+      background-repeat: no-repeat;
+      background-color: #fdf6e9;
+    }
+    .first {
+      padding: 10px 0px;
+      width: 100%;
+      align-items: center;
+      margin: 0px;
+    }
+    .first h1 {
+      font-size: 30px;
+      /* margin-left: 50px; */
+    }
+    .first p {
+      /* margin-left: 50px; */
+    }
+    .first button {
+      padding: 5px;
+      /* margin-left: 50px; */
+  
+    }
+  
+  }
+  
