@@ -1,40 +1,43 @@
 export const sellerData = [
     {
-        id: 1,
-        name: 'Roadstart',
-        imageUrl:'images/seller/tshirt1.webp'
-    },
-    {
-        id: 2,
-        name: 'Allen Solly',
-        imageUrl:'images/seller/bag1.jpeg'
-    },
-    {
-        id: 3,
-        name: 'Louis Philippe',
-        imageUrl:'images/seller/sports1.jpeg'
-    },
-    {
-        id: 4,
-        name: 'Adidas',
-        imageUrl:'images/seller/shoes1.jpeg'
-    },
-    {
-        id: 5,
-        name: 'Trendyol',
-        imageUrl:'images/seller/gawn.jpg'
+        id: 9,
+        name:'Puma',
+        imageUrl:'images/seller/shoes2.jpeg',
+        price :'$ 20.00'
     },{
-        id: 6,
-        name: 'YK Disney',
-        imageUrl:'images/seller/frock1.jpeg'
+        id:10,
+        name:'Nike',
+        imageUrl:'images/seller/frock5.jpeg',
+        price :'$ 30.00'
     },{
-        id: 7,
-        name: 'US Polo',
-        imageUrl:'images/seller/shirt1.jpeg'
+        id:11,
+        name:'Adidas',
+        imageUrl:'images/seller/shoes3.jpeg',
+        price :'$ 40.00'
     },{
-        id: 8,
-        name: 'Zyla',
-        imageUrl:'images/seller/sandal1.jpeg'
-    }
-    
+        id:12,
+        name:'Sreeram',
+        imageUrl:'images/seller/shirt2.webp',
+        price:'$ 50.00'
+    },{
+        id:13,
+        name:'US Polo',
+        imageUrl:'images/seller/tshirt3.jpeg',
+        price:'$ 60.00'
+    },{
+        id:14,
+        name:'Peter England',
+        imageUrl:'images/seller/shirt4.jpg',
+        price:'$ 70.00'
+    },{
+        id:15,
+        name:'wala',
+        imageUrl:'images/seller/bag2.jpeg',
+        price:'$ 80.00'
+    },{
+        id:16,
+        name:'Van',
+        imageUrl:'images/seller/sports1.jpeg',
+        price:'$ 80.00'
+    }   
 ]

@@ -28,10 +28,11 @@
 
   @media screen and (min-width: 300px) and (max-width: 768px) {
     .section_div {
-      height: auto;
+      width:auto;
+      height: 300px;
       padding: 0px;
-      background-image: url("/assets/h_image.png");
-      background-position: bottom center; /* This positions the image to the right */
+      background-image: url("/images/h_image.webp");
+      background-position: right; /* This positions the image to the right */
       background-size: contain; /* This makes the image fit within the container */
       background-repeat: no-repeat;
       background-color: #fdf6e9;

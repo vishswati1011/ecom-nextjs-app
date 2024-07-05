@@ -16,9 +16,15 @@
     justify-content: center; /* Add this if you want to center the button horizontally */
     align-items: flex-end; /* Add this to align the button to the bottom */
     padding: 10px; 
+    z-index: 0;
     position: relative; 
 }
 
+.link{
+    text-decoration: none;
+    color: black;
+
+}
 .card_image ul {
     position: absolute; /* Add this */
     top: 10px; /* Add this */
@@ -38,20 +44,19 @@
     justify-content: center;
     align-items: center;
 }
-.card_image button {
-    display: none; /* Add this */
+.card_image .card_btn{
+    display: none;
 }
-
-.card_image:hover button {
-    display: block; /* Add this */
-}
-.card_btn:hover{
+.card_image:hover .card_btn{
+    display: block;
     background-color: white;
     width:150px;
     padding: 10px;
     border: none;
     border-radius: 5px;
+    margin-bottom: 50px;
 }
+
 .name{
     font-size: 16px;
     font-weight: 600;

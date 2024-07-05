@@ -1,18 +1,33 @@
-"use client";
-import React from "react";
+'use client'
+import React ,{useEffect,useRef} from 'react'
 import styles from "./header.module.css";
 import Image from "next/image";
 import { CiSearch } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { IoMenuSharp } from "react-icons/io5";
-
+import Link from 'next/link';
 export default function Header() {
-  const toggleMenu = () => {
-    const menu = window.document.querySelector("." + styles.mobile_menu);
-    menu.classList.toggle(styles.active);
-    // menu.classList.toggle(`${styles.nav_list}  ${styles.active}`);
-  };
+ 
+  const menuRef = useRef(); 
+  useEffect(() => {
+      const handleClickOutside = (event) => {
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+          menuRef.current.classList.remove(styles.active);
+        }
+      };
+  
+      document.addEventListener('mousedown', handleClickOutside);
+  
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+      };
+    }, []); 
+
+    const toggleMenu = () => {
+      const menu = window.document.querySelector("." + styles.mobile_menu);
+      menu.classList.toggle(styles.active);
+    };
 
   return (
     <div>
@@ -21,8 +36,8 @@ export default function Header() {
         <Image src="/images/k_logo.png" alt="logo" width="200" height="70" />
 
         <ul className={styles.nav_list}>
-          <li>Home</li>
-          <li>Shop</li>
+        <li> <Link href='/' className={styles.link}>Home</Link></li>
+            <li> <Link href='/shop'className={styles.link}>Shop</Link></li>
           <li>Our Story</li>
           <li>Blog</li>
           <li>Contact us</li>
@@ -52,9 +67,9 @@ export default function Header() {
 
         <div className={styles.menu_list}>
           <span onClick={toggleMenu}><IoMenuSharp size={30}/></span>
-          <ul className={styles.mobile_menu}>
-            <li>Home</li>
-            <li>Shop</li>
+          <ul className={styles.mobile_menu} ref={menuRef}>
+            <li> <Link href='/' className={styles.link}>Home</Link></li>
+            <li> <Link href='/shop'className={styles.link} >Shop</Link></li>
             <li>Our Story</li>
             <li>Blog</li>
             <li>Contact us</li>

@@ -1,0 +1,18 @@
+.shop_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.filter {
+    width: 20%;
+    height: auto;
+    padding: 20px;
+}
+.shop_div{
+    background-color: #f5f5f5;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
