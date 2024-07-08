@@ -6,6 +6,7 @@ import Instagram from './component/instaStory/instagram';
 import Support from './component/support/support';
 
 export default function Home() {
+
   return (
     <main>
       <Main />

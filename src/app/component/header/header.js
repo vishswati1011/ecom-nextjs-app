@@ -7,6 +7,7 @@ import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { IoMenuSharp } from "react-icons/io5";
 import Link from 'next/link';
+import CheckoutModal from '../../modal/checkout/checkout';
 export default function Header() {
  
   const menuRef = useRef(); 
@@ -51,7 +52,7 @@ export default function Header() {
             <CiHeart size={25} />
           </li>
           <li>
-            <CiShoppingCart size={25} />
+            <CheckoutModal/>
           </li>
           <li>
           <Link href='/login' className={styles.link}>
@@ -82,7 +83,7 @@ export default function Header() {
               <CiHeart size={30} />
             </li>
             <li>
-              <CiShoppingCart size={30} />
+            <CheckoutModal/>
             </li>
             <li>
             <Link href='/login' className={styles.link}>

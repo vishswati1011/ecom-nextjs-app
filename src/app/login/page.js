@@ -1,12 +1,16 @@
 'use client';
 import React,{useState} from "react";
 import styles from "./login.module.css";
+import AlertModal from "../modal/alert/alertModal";
+
 export default function Login() {
 
   const [inputValue,setInputValue] = useState({
     email : '',
     username : ''
   })
+  const [isLoggedIn,setIsLoggedIn] = useState(false)
+  const [showModal,setShowModal] = useState(false)
 
   const handleChange = (e) =>{
     const {name,value} = e.target;
@@ -16,10 +20,13 @@ export default function Login() {
       [name] : value
     })
   }
+  const handleCloseModal = () => setShowModal(false);
  
   const handleSubmit =async(e) =>{
     e.preventDefault();
-    router.push('/')
+    setIsLoggedIn(true)
+    setShowModal(true)
+    // router.push('/')
   }
 
   return (
@@ -56,6 +63,7 @@ export default function Login() {
           </form>
         </div>
       </div>
+      {isLoggedIn && <AlertModal showModal={showModal} message="Welcome back!" onClose={handleCloseModal} />}
     </div>
   );
 }

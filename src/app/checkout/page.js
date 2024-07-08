@@ -44,6 +44,7 @@ export default function Checkout() {
             <span>$ 200.00</span>
           </div>
           <span className={styles.text_muted}>Enter Discount Code</span>
+          <input type="text" className={styles.input} placeholder="Enter here..." />
           <button className={styles.checkout_btn}>Apply</button>
           <div className={styles.sub_total}>
             <span>Delivery Charges</span>
