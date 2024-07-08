@@ -1,7 +1,10 @@
 'use client'
 import React ,{useEffect,useRef} from 'react'
 import styles from './filter.module.css'
+import { BsFilterSquare } from "react-icons/bs";
 
+import { BsGrid } from "react-icons/bs";
+import { GoChevronDown } from "react-icons/go";
 export default function Filter() {
 
     const menuRef = useRef(); 
@@ -20,6 +23,7 @@ export default function Filter() {
       }, []); 
 
     const toggleMenu = () => {
+        console.log('clicked')
         const menu = window.document.querySelector("." + styles.product);
         menu.classList.toggle(styles.active);
     };
@@ -28,9 +32,16 @@ export default function Filter() {
   return (
     <div className={styles.filter_section}>
 
-        <h4 onClick={toggleMenu} className={styles.filter}>Filter</h4>
+        <div onClick={toggleMenu} className={styles.filter}>
+        {/* <div className={styles.title}> */}
+        <BsFilterSquare className={styles.icon} size={20}/>
+        <BsGrid size={20} className={styles.icon}/>  
+        <GoChevronDown size={20}/>
+      </div>
+      {/* </div> */}
+
         <ul ref={menuRef} className={styles.product}>
-            <p><h4>Product Categories </h4></p>
+            <h4>Product Categories </h4>
             <li>
                 <input type='checkbox' className={styles.product_checkbox}/> Men
             </li>

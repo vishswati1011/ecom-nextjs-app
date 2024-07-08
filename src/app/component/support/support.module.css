@@ -17,7 +17,8 @@
     .grids{
         display: flex;
         flex-direction: column;
-        padding: 20px 10px;
+        padding: 50px;
+        justify-content: center;
     }
     
 }

@@ -54,7 +54,9 @@ export default function Header() {
             <CiShoppingCart size={25} />
           </li>
           <li>
-            <button className={styles.list_btn}>Login</button>
+          <Link href='/login' className={styles.link}>
+              <button className={styles.list_btn}>Login</button>
+              </Link>
           </li>
         </ul>
       </nav>
@@ -83,7 +85,9 @@ export default function Header() {
               <CiShoppingCart size={30} />
             </li>
             <li>
+            <Link href='/login' className={styles.link}>
               <button className={styles.list_btn}>Login</button>
+              </Link>
             </li>
           </ul>
         </div>
