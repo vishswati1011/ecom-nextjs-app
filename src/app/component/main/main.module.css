@@ -15,8 +15,9 @@
     font-size: 40px;
     margin: 0px;
   }
-  .first h3 h5 {
-    margin:0px;
+  .first p{
+    font-size: 14px;
+    margin-left: 5px;
   }
   .first button {
     background-color: black;
@@ -32,28 +33,29 @@
       height: 300px;
       padding: 0px;
       background-image: url("/images/h_image.webp");
-      background-position: right; /* This positions the image to the right */
+      background-position: bottom right; /* This positions the image to the right */
       background-size: contain; /* This makes the image fit within the container */
       background-repeat: no-repeat;
       background-color: #fdf6e9;
+      background-size: 150px;
     }
     .first {
-      padding: 10px 0px;
+      padding: 50px;
       width: 100%;
       align-items: center;
       margin: 0px;
     }
     .first h1 {
-      font-size: 30px;
-      /* margin-left: 50px; */
+      font-size: 20px;
+    }
+    .first h3 {
+      font-size: 16px;
     }
     .first p {
-      /* margin-left: 50px; */
+      font-size: 12px;
     }
     .first button {
       padding: 5px;
-      /* margin-left: 50px; */
-  
     }
   
   }

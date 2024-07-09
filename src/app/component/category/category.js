@@ -12,10 +12,10 @@ export default function category() {
         <p>Shop by Categories</p>
         <ul>
           <li>
-              <BsFillArrowLeftSquareFill size={30}/>
+              <BsFillArrowLeftSquareFill className={styles.icon_size} size={30} />
           </li>
           <li>
-            <BsArrowRightSquareFill size={30}/>
+            <BsArrowRightSquareFill className={styles.icon_size} size={30} />
           </li>
         </ul>
       </div>

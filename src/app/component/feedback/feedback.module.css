@@ -67,6 +67,16 @@
 
 @media screen and (min-width:300px) and (max-width:768px) {
 
+    .category_div{
+        padding: 50px;
+    }
+    .title p{
+        font-size: 14px;
+    }
+    .icon_size {
+        width:20px;
+    }
+
     .cards {
         display: grid;
         grid-template-columns: 1fr;
@@ -74,5 +84,8 @@
     }
     .card {
         width: 250px;
+    }
+    .card p {
+        font-size: 14px;
     }
 }

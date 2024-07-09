@@ -33,4 +33,10 @@
 
 @media screen and (min-width:300px) and (max-width:768px) {
 
+    .title p{
+        font-size: 14px;
+    }
+    .icon_size {
+      width:20px;
+    }
 }

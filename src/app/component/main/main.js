@@ -13,7 +13,7 @@ export default function Main() {
         <h1>
            Woomen Collection
         </h1>
-        <h5>UPTO 40% OFF</h5>
+        <p>UPTO 40% OFF</p>
         <button>Shop Now <BsArrowRight/> </button>
     </div>
 </section>

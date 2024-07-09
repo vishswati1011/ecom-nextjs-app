@@ -15,7 +15,7 @@ export default function category() {
       </div>
       <div className={styles.cards}>
         {insta.map((category) => (
-            <Image src={`/${category.imageUrl}`} alt={category.name} width={250} height={250} key={category.id}/>
+            <Image src={`/${category.imageUrl}`} alt={category.name} width={250} height={300} key={category.id} className={styles.image_css}/>
         ))}
       </div>
 
