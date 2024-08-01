@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./page.module.css";
 import { categoryData } from "../util/category";
 import Image from "next/image";
+import TotalPrice from "../component/shop_delivery/totalPrice";
 
 export default function Checkout() {
   return (
@@ -38,24 +39,7 @@ export default function Checkout() {
             ))}
           </tbody>
         </table>
-        <div className={styles.total_price}>
-          <div className={styles.sub_total}>
-            <span className={styles.title}><b>Subtotal</b></span>
-            <span>$ 200.00</span>
-          </div>
-          <span className={styles.text_muted}>Enter Discount Code</span>
-          <input type="text" className={styles.input} placeholder="Enter here..." />
-          <button className={styles.checkout_btn}>Apply</button>
-          <div className={styles.sub_total}>
-            <span>Delivery Charges</span>
-            <span>$ 5.00</span>
-          </div>
-          <div className={styles.sub_total}>
-            <span>Grand Total</span>
-            <span>$ 5.00</span>
-          </div>
-          <button className={styles.checkout_btn}>Checkout</button>
-        </div>
+       <TotalPrice/>
       </div>
     </div>
   );

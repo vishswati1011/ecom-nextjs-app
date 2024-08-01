@@ -1,0 +1,27 @@
+.address {
+    padding: 10px;
+}
+.address p{
+    margin-left: 10px;
+}
+.debit_card{
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    gap:20px
+}
+.form_div{
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form_div h6{
+    padding: 10px;
+}
+.form_review{
+    padding: 10px;
+}
+.form_label{
+    font-size: 12px;
+}

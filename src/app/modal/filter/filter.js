@@ -20,11 +20,11 @@ export default function Filter() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [menuRef]);
 
   const toggleMenu = () => {
-    const menu = window.document.querySelector("." + styles.product);
-    menu.classList.toggle(styles.active);
+    menuRef.current.classList.toggle(styles.active);
+
   };
 
   return (
@@ -35,7 +35,7 @@ export default function Filter() {
         <GoChevronDown size={20} />
       </div>
       <ul ref={menuRef} className={styles.product}>
-        <h4>Product Categories </h4>
+        <h6>Product Categories </h6>
         <li>
           <input type="checkbox" className={styles.product_checkbox} /> Men
         </li>

@@ -24,8 +24,7 @@ export default function Filter() {
       }, []); 
 
     const toggleMenu = () => {
-        const menu = window.document.querySelector("." + styles.product);
-        menu.classList.toggle(styles.active);
+      menuRef.current.classList.toggle(styles.active);
     };
       
 

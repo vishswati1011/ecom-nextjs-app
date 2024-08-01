@@ -1,13 +1,11 @@
 .container {
     display: column;
     justify-content: space-between;
-    /* align-items: center; */
     padding: 50px;
 }
 .checkout_div{
     display:flex;
     gap:10px;
-    /* justify-content: space-between; */
 }
 
 .list {
@@ -15,7 +13,6 @@
     border-collapse: collapse;
 }
 .list th, .list td {
-    /* border: 1px solid #ddd; */
     padding: 8px;
     text-align: left;
 }
@@ -36,7 +33,6 @@
     padding: 5px;
     border-radius: 5px;
     border: 1px solid gray;
-
 }
 .total_price{
     width: 30%;
@@ -71,6 +67,9 @@
 }
 
 @media screen and (min-width:300px) and (max-width:768px) {
+    .container{
+        padding: 10px;
+    }
     .checkout_div{
         display:flex;
         flex-direction: column;
