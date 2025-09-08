@@ -1,88 +1,84 @@
 .container {
-    display: column;
-    justify-content: space-between;
-    padding: 50px;
+  display: column;
+  justify-content: space-between;
+  padding: 50px;
 }
-.checkout_div{
-    display:flex;
-    gap:10px;
+.checkout_div {
+  display: flex;
+  gap: 10px;
 }
 
 .list {
-    width: 70%;
-    border-collapse: collapse;
+  width: 70%;
+  border-collapse: collapse;
 }
-.list th, .list td {
-    padding: 8px;
-    text-align: left;
+.list th,
+.list td {
+  padding: 8px;
+  text-align: left;
 }
 .list th {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
-.image{
-    border-radius:5px;
-    width:55px;
-    height:55px;
+.image {
+  border-radius: 5px;
+  width: 55px;
+  height: 55px;
 }
 .table_header {
-
-    border-bottom: 1px solid black;
-  
+  border-bottom: 1px solid black;
 }
-.input{
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid gray;
+.input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
 }
-.total_price{
-    width: 30%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-    border: 1px solid gray;
-    border-radius: 5px;
-
+.total_price {
+  width: 30%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
-.sub_total{
-    display: flex;
-    justify-content: space-between;
+.sub_total {
+  display: flex;
+  justify-content: space-between;
 }
 .title {
-    font-size: 20px;
-    font-weight: bold;
-
+  font-size: 20px;
+  font-weight: bold;
 }
-.text_muted{
-    font-size: 14px;
-    color: gray;
-}
-
-.checkout_btn{
-    width:100%;
-    background-color: black;
-    color:white;
-    padding:10px;
-    border-radius: 10px;
+.text_muted {
+  font-size: 14px;
+  color: gray;
 }
 
-@media screen and (min-width:300px) and (max-width:768px) {
-    .container{
-        padding: 10px;
-    }
-    .checkout_div{
-        display:flex;
-        flex-direction: column;
-    }
-    .list {
-        /* width: 100%; */
-        overflow-x: auto;
-    }
-    .total_price{
-        width: 100%;
-    }
-    .checkout_btn{
-        width:100%;
-    }
-    
+.checkout_btn {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .checkout_div {
+    display: flex;
+    flex-direction: column;
+  }
+  .list {
+    /* width: 100%; */
+    overflow-x: auto;
+  }
+  .total_price {
+    width: 100%;
+  }
+  .checkout_btn {
+    width: 100%;
+  }
 }

@@ -1,103 +1,99 @@
 /* CSS */
 .desktop_header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  margin: 0px;
+  top: 0;
+}
+.header {
+  display: none;
+}
+.logo_section {
+  width: 30%;
+}
+.menu_list {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_list {
+  display: flex;
+  align-items: center;
+}
+.nav_list li,
+.mobile_menu li {
+  list-style: none;
+  margin-right: 25px;
+}
+.list_btn {
+  width: 80px;
+  background-color: black;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.login_section {
+  margin-left: 100px;
+}
+
+.menu_list span {
+  display: none;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  .desktop_header {
+    display: none;
+  }
+  .header {
     width: 100%;
     position: fixed;
     z-index: 1;
     background-color: white;
+    top: 0;
     margin: 0px;
-    top:0;
-}
-.header {
-    display: none;
-}
-.logo_section{
-    width:30%
-}
-.menu_list{
-    width:70%;
     display: flex;
-    justify-content: space-around;
-}
-
-.nav_list {
-    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-}
-.nav_list li, .mobile_menu li {
-    list-style: none;
-    margin-right: 25px;
-}
-.list_btn {
-    width:80px;
-    background-color:black;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-}
-.login_section{
-    margin-left: 100px;
-}
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  .logo_section {
+    width: 30%;
+  }
+  .menu_list {
+    width: 70%;
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+  }
+  .menu_list span {
+    display: block;
+  }
 
-.menu_list span {
+  .mobile_menu {
+    position: absolute;
     display: none;
-
-}
-.link {
-    text-decoration: none;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     color: black;
-}
-@media screen and (max-width: 768px) {
-  
-   
-    .desktop_header{
-        display: none;
-    }
-    .header {
-        width: 100%;
-        position: fixed;
-        z-index: 1;
-        background-color: white;
-        top:0;
-        margin: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    }
-    .logo_section{
-        width:30%;
-    }
-    .menu_list{
-        width: 70%;
-        display: flex;
-        justify-content: right;
-        margin-right: 50px;
-    }
-    .menu_list span{
-        display:block
-    }
-   
-    .mobile_menu{
-        position: absolute;
-        display: none;
-        min-width: 100px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        color: black;
-        background-color: white;
-
-    }
-    .mobile_menu.active {
-        display: block;
-    }
-    .mobile_menu li{
-        padding: 10px;
-    }
-    
+    background-color: white;
+  }
+  .mobile_menu.active {
+    display: block;
+  }
+  .mobile_menu li {
+    padding: 10px;
+  }
 }

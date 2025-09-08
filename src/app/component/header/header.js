@@ -1,21 +1,17 @@
-"use client";
-import React, { useEffect, useRef, useState } from "react";
-import styles from "./header.module.css";
-import Image from "next/image";
-import { CiSearch } from "react-icons/ci";
-import { CiHeart } from "react-icons/ci";
-import { CiShoppingCart } from "react-icons/ci";
-import { IoMenuSharp } from "react-icons/io5";
-import Link from "next/link";
-import CheckoutModal from "../../modal/checkout/checkout";
-import Shopmenu from "../../modal/shopmenu/shopmenu";
-
+'use client';
+import React, { useEffect, useRef } from 'react';
+import styles from './header.module.css';
+import Image from 'next/image';
+import { CiSearch } from 'react-icons/ci';
+import { CiHeart } from 'react-icons/ci';
+import { CiShoppingCart } from 'react-icons/ci';
+import { IoMenuSharp } from 'react-icons/io5';
+import Link from 'next/link';
+import CheckoutModal from '../../modal/checkout/checkout';
+import Shopmenu from '../../modal/shopmenu/shopmenu';
 
 export default function Header() {
-
-
   const menuRef = useRef();
-  const [show,setShow]= useState(false);
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
       menuRef.current.classList.remove(styles.active);
@@ -23,9 +19,9 @@ export default function Header() {
   };
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
@@ -37,8 +33,8 @@ export default function Header() {
     <div>
       {/** desktop view */}
       <nav className={styles.desktop_header}>
-      <Link href="/" className={styles.link}>
-        <Image src="/images/k_logo.png" alt="logo" width="200" height="70" />
+        <Link href="/" className={styles.link}>
+          <Image src="/images/k_logo.png" alt="logo" width="200" height="70" />
         </Link>
         <ul className={styles.nav_list}>
           <li>
@@ -81,7 +77,7 @@ export default function Header() {
           </span>
           <ul className={styles.mobile_menu} ref={menuRef}>
             <li>
-                <Shopmenu handleNavClose={toggleMenu} />
+              <Shopmenu handleNavClose={toggleMenu} />
             </li>
             <li>Our Story</li>
             <li>Blog</li>
@@ -93,10 +89,9 @@ export default function Header() {
               <CiHeart size={30} />
             </li>
             <li>
-            <Link href="/checkout" className={styles.link}>
-
-            <CiShoppingCart size={30}/>
-            </Link>
+              <Link href="/checkout" className={styles.link}>
+                <CiShoppingCart size={30} />
+              </Link>
             </li>
             <li>
               <Link href="/login" className={styles.link}>

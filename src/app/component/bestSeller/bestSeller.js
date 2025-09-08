@@ -1,7 +1,7 @@
-import React from "react";
-import Card from "../../modal/priceCard/cardWithPrice";
-import { sellerData } from "../../util/seller";
-import styles from "./bestSeller.module.css";
+import React from 'react';
+import Card from '../../modal/priceCard/cardWithPrice';
+import { sellerData } from '../../util/seller';
+import styles from './bestSeller.module.css';
 
 export default function category() {
   return (

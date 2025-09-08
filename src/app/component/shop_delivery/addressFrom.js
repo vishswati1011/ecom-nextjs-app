@@ -1,8 +1,8 @@
-"use client";
+'use client';
 import Button from 'react-bootstrap/Button';
-import React from "react";
-import Form from "react-bootstrap/Form";
-import styles from "../customer_review/addreview.module.css";
+import React from 'react';
+import Form from 'react-bootstrap/Form';
+import styles from '../customer_review/addreview.module.css';
 export default function AddYourReview() {
   return (
     <div className={styles.form_div}>
@@ -19,7 +19,9 @@ export default function AddYourReview() {
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label className={styles.form_label}>Flat, House no, Building, Company, Appartment</Form.Label>
+          <Form.Label className={styles.form_label}>
+            Flat, House no, Building, Company, Appartment
+          </Form.Label>
           <Form.Control type="text" />
         </Form.Group>
 
@@ -43,8 +45,9 @@ export default function AddYourReview() {
           <Form.Control type="text" />
         </Form.Group>
 
-    
-        <Button type="submit" variant="dark">Add new address</Button>
+        <Button type="submit" variant="dark">
+          Add new address
+        </Button>
       </Form>
     </div>
   );

@@ -1,74 +1,71 @@
-
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 .card_image {
-    width:200px;
-    height:300px;
-    border: 1px solid gray;
-    background-color: white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex; /* Add this */
-    justify-content: center; /* Add this if you want to center the button horizontally */
-    align-items: flex-end; /* Add this to align the button to the bottom */
-    padding: 10px; 
-    z-index: 0;
-    position: relative; 
+  width: 200px;
+  height: 300px;
+  border: 1px solid gray;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex; /* Add this */
+  justify-content: center; /* Add this if you want to center the button horizontally */
+  align-items: flex-end; /* Add this to align the button to the bottom */
+  padding: 10px;
+  z-index: 0;
+  position: relative;
 }
 
-.link{
-    text-decoration: none;
-    color: black;
-
+.link {
+  text-decoration: none;
+  color: black;
 }
 .card_image ul {
-    position: absolute; /* Add this */
-    top: 10px; /* Add this */
-    right: 10px; /* Add this */
-    list-style: none; /* Add this */
-    display: flex; /* Add this */
-    flex-direction: column;
-    gap: 10px; /* Add this */
+  position: absolute; /* Add this */
+  top: 10px; /* Add this */
+  right: 10px; /* Add this */
+  list-style: none; /* Add this */
+  display: flex; /* Add this */
+  flex-direction: column;
+  gap: 10px; /* Add this */
 }
 
 .card_image ul li {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.card_image .card_btn{
-    display: none;
+.card_image .card_btn {
+  display: none;
 }
-.card_image:hover .card_btn{
-    display: block;
-    background-color: white;
-    width:150px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 50px;
+.card_image:hover .card_btn {
+  display: block;
+  background-color: white;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 50px;
 }
 
-.name{
-    font-size: 16px;
-    font-weight: 600;
+.name {
+  font-size: 16px;
+  font-weight: 600;
 }
-.desc{
-    font-size: 14px;
-    font-weight: 400;
+.desc {
+  font-size: 14px;
+  font-weight: 400;
 }
 .price {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    margin: 10px 0px 0px -30px;
-
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 10px 0px 0px -30px;
 }

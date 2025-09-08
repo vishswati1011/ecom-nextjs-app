@@ -1,25 +1,25 @@
 .card {
-    width:200px;
-    height:300px;
-    border: 1px solid gray;
-    background-color: white;
+  width: 200px;
+  height: 300px;
+  border: 1px solid gray;
+  background-color: white;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex; /* Add this */
-    justify-content: center; /* Add this if you want to center the button horizontally */
-    align-items: flex-end; /* Add this to align the button to the bottom */
-    padding: 10px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex; /* Add this */
+  justify-content: center; /* Add this if you want to center the button horizontally */
+  align-items: flex-end; /* Add this to align the button to the bottom */
+  padding: 10px;
 }
-.card button{
-    background-color: white;
-    width:150px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+.card button {
+  background-color: white;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
 }
-.link{
-    text-decoration: none;
-    color: black;
+.link {
+  text-decoration: none;
+  color: black;
 }

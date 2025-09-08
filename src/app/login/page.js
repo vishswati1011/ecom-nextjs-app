@@ -1,33 +1,32 @@
 'use client';
-import React,{useState} from "react";
-import styles from "./login.module.css";
-import AlertModal from "../modal/alert/alertModal";
+import React, { useState } from 'react';
+import styles from './login.module.css';
+import AlertModal from '../modal/alert/alertModal';
 
 export default function Login() {
+  const [inputValue, setInputValue] = useState({
+    email: '',
+    username: '',
+  });
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
-  const [inputValue,setInputValue] = useState({
-    email : '',
-    username : ''
-  })
-  const [isLoggedIn,setIsLoggedIn] = useState(false)
-  const [showModal,setShowModal] = useState(false)
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  const handleChange = (e) =>{
-    const {name,value} = e.target;
- 
     setInputValue({
       ...inputValue,
-      [name] : value
-    })
-  }
+      [name]: value,
+    });
+  };
   const handleCloseModal = () => setShowModal(false);
- 
-  const handleSubmit =async(e) =>{
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsLoggedIn(true)
-    setShowModal(true)
+    setIsLoggedIn(true);
+    setShowModal(true);
     // router.push('/')
-  }
+  };
 
   return (
     <div className={styles.container}>
@@ -35,15 +34,14 @@ export default function Login() {
         <div className={styles.login_div}>
           <h2>Welcome </h2>
           <span className={styles.text_muted}>Please login here</span>
-          <form className={styles.form} onSubmit={(e)=>handleSubmit(e)}>
+          <form className={styles.form} onSubmit={(e) => handleSubmit(e)}>
             <input
               type="email"
               name="email"
               placeholder="Email"
               className={styles.input}
               value={inputValue.email}
-              onChange={(e)=>handleChange(e)}
-
+              onChange={(e) => handleChange(e)}
             />
             <input
               name="password"
@@ -51,8 +49,7 @@ export default function Login() {
               placeholder="Password"
               className={styles.input}
               value={inputValue.password}
-              onChange={(e)=>handleChange(e)}
-
+              onChange={(e) => handleChange(e)}
             />
             <button className={styles.button}>Login </button>
             <div className={styles.linkContainer}>
@@ -63,7 +60,9 @@ export default function Login() {
           </form>
         </div>
       </div>
-      {isLoggedIn && <AlertModal showModal={showModal} message="Welcome back!" onClose={handleCloseModal} />}
+      {isLoggedIn && (
+        <AlertModal showModal={showModal} message="Welcome back!" onClose={handleCloseModal} />
+      )}
     </div>
   );
 }

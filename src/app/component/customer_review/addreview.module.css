@@ -1,15 +1,15 @@
-.form_div{
-    padding: 15px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.form_div {
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-.form_div h6{
-    padding: 10px;
+.form_div h6 {
+  padding: 10px;
 }
-.form_review{
-    padding: 10px;
+.form_review {
+  padding: 10px;
 }
-.form_label{
-    font-size: 12px;
+.form_label {
+  font-size: 12px;
 }

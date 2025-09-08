@@ -1,8 +1,8 @@
-"use client";
+'use client';
 import Button from 'react-bootstrap/Button';
-import React from "react";
-import Form from "react-bootstrap/Form";
-import styles from "./addreview.module.css";
+import React from 'react';
+import Form from 'react-bootstrap/Form';
+import styles from './addreview.module.css';
 export default function AddYourReview() {
   return (
     <div className={styles.form_div}>
@@ -20,7 +20,9 @@ export default function AddYourReview() {
           <Form.Label className={styles.form_label}>Your Review</Form.Label>
           <Form.Control as="textarea" rows={3} />
         </Form.Group>
-        <Button type="submit" variant="dark">Submit</Button>
+        <Button type="submit" variant="dark">
+          Submit
+        </Button>
       </Form>
     </div>
   );

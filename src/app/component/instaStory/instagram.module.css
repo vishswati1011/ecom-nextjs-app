@@ -1,50 +1,48 @@
-.category_div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px;
+.category_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
 }
-.filter_div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.filter_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.cards{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 5rem;
-    margin-top: 20px;
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-top: 20px;
 }
-.title{
-    display: flex;
-    justify-content: space-between;
+.title {
+  display: flex;
+  justify-content: space-between;
 }
 .title ul {
-    display: flex;
-    list-style: none;
-    gap: 10px;
+  display: flex;
+  list-style: none;
+  gap: 10px;
 }
-.title p{
-    font-size: 24px;
-    font-weight: 400;
+.title p {
+  font-size: 24px;
+  font-weight: 400;
 }
 
-@media screen and (min-width:300px) and (max-width:768px) {
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .category_div {
+    padding: 50px;
+  }
+  .title p {
+    font-size: 14px;
+  }
+  .icon_size {
+    width: 20px;
+  }
 
-    .category_div{
-        padding: 50px;
-    }
-    .title p{
-        font-size: 14px;
-    }
-    .icon_size {
-        width:20px;
-    }
-    
-    .image_css{
-        background-repeat: no-repeat;
-        background-size: contain;
-
-    }
+  .image_css {
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }

@@ -1,15 +1,14 @@
 .main {
-    margin-top: 75px;
+  margin-top: 75px;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .main {
+    margin-top: 100px;
   }
-  
-  .modal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  @media screen  and  (min-width: 300px) and (max-width: 768px) {
-    .main {
-      margin-top: 100px;
-    }
-    
-  }
+}

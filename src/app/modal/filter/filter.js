@@ -1,10 +1,10 @@
-"use client";
-import React, { useEffect, useRef } from "react";
-import styles from "./filter.module.css";
-import { BsFilterSquare } from "react-icons/bs";
+'use client';
+import React, { useEffect, useRef } from 'react';
+import styles from './filter.module.css';
+import { BsFilterSquare } from 'react-icons/bs';
 
-import { BsGrid } from "react-icons/bs";
-import { GoChevronDown } from "react-icons/go";
+import { BsGrid } from 'react-icons/bs';
+import { GoChevronDown } from 'react-icons/go';
 
 export default function Filter() {
   const menuRef = useRef();
@@ -15,16 +15,15 @@ export default function Filter() {
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [menuRef]);
 
   const toggleMenu = () => {
     menuRef.current.classList.toggle(styles.active);
-
   };
 
   return (
@@ -77,46 +76,22 @@ export default function Filter() {
         </li>
         <p>Filter By Color</p>
         <li>
-          <div
-            className={styles.color_div}
-            style={{ backgroundColor: "red" }}
-          ></div>{" "}
-          Red
+          <div className={styles.color_div} style={{ backgroundColor: 'red' }}></div> Red
         </li>
         <li>
-          <div
-            className={styles.color_div}
-            style={{ backgroundColor: "blue" }}
-          ></div>{" "}
-          Blue
+          <div className={styles.color_div} style={{ backgroundColor: 'blue' }}></div> Blue
         </li>
         <li>
-          <div
-            className={styles.color_div}
-            style={{ backgroundColor: "green" }}
-          ></div>{" "}
-          Green
+          <div className={styles.color_div} style={{ backgroundColor: 'green' }}></div> Green
         </li>
         <li>
-          <div
-            className={styles.color_div}
-            style={{ backgroundColor: "yellow" }}
-          ></div>{" "}
-          Yellow
+          <div className={styles.color_div} style={{ backgroundColor: 'yellow' }}></div> Yellow
         </li>
         <li>
-          <div
-            className={styles.color_div}
-            style={{ backgroundColor: "black" }}
-          ></div>{" "}
-          Black
+          <div className={styles.color_div} style={{ backgroundColor: 'black' }}></div> Black
         </li>
         <li>
-          <div
-            className={styles.color_div}
-            style={{ backgroundColor: "orange" }}
-          ></div>{" "}
-          Orange
+          <div className={styles.color_div} style={{ backgroundColor: 'orange' }}></div> Orange
         </li>
 
         <p>Filter By Size</p>

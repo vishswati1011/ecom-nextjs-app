@@ -1,8 +1,8 @@
-import React from "react";
-import Image from "next/image";
-import { review_data } from "../../util/review";
-import styles from "./review.module.css";
-import { FaStar } from "react-icons/fa";
+import React from 'react';
+import Image from 'next/image';
+import { review_data } from '../../util/review';
+import styles from './review.module.css';
+import { FaStar } from 'react-icons/fa';
 
 export default function Review() {
   return (

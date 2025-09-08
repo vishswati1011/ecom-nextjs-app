@@ -1,48 +1,44 @@
-
-.total_price{
-    width: 30%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    height: 380px;
+.total_price {
+  width: 30%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 380px;
 }
-.input{
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid gray;
+.input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
 }
-.sub_total{
-    display: flex;
-    justify-content: space-between;
+.sub_total {
+  display: flex;
+  justify-content: space-between;
 }
 .title {
-    font-size: 20px;
-    font-weight: bold;
-
+  font-size: 20px;
+  font-weight: bold;
 }
-.text_muted{
-    font-size: 14px;
-    color: gray;
-}
-
-.checkout_btn{
-    width:100%;
-    background-color: black;
-    color:white;
-    padding:10px;
-    border-radius: 10px;
+.text_muted {
+  font-size: 14px;
+  color: gray;
 }
 
-@media screen and (min-width:300px) and (max-width:768px) {
-   
-    .total_price{
-        width: 100%;
-    }
-    .checkout_btn{
-        width:100%;
-    }
-    
+.checkout_btn {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .total_price {
+    width: 100%;
+  }
+  .checkout_btn {
+    width: 100%;
+  }
 }

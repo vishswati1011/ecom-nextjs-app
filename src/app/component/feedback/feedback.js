@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "./feedback.module.css";
-import { BsArrowRightSquareFill } from "react-icons/bs";
-import { BsFillArrowLeftSquareFill } from "react-icons/bs";
-import Image from "next/image";
+import React from 'react';
+import styles from './feedback.module.css';
+import { BsArrowRightSquareFill } from 'react-icons/bs';
+import { BsFillArrowLeftSquareFill } from 'react-icons/bs';
+import Image from 'next/image';
 export default function category() {
   return (
     <div className={styles.category_div}>
@@ -23,8 +23,8 @@ export default function category() {
           <h3>* * * * *</h3>
           <h4>Good Work!</h4>
           <p>
-            Lorem Ipsum Dolor Sit Amet. Consectetur Adipiscing Elit. Vitae Nulla
-            Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet....
+            Lorem Ipsum Dolor Sit Amet. Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A
+            Urna Viverra Morbi. Morbi Donec Amet....
           </p>
 
           <div className={styles.author}>
@@ -40,8 +40,8 @@ export default function category() {
           <h3>* * * * *</h3>
           <h4>Good Work!</h4>
           <p>
-            Lorem Ipsum Dolor Sit Amet. Consectetur Adipiscing Elit. Vitae Nulla
-            Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet....
+            Lorem Ipsum Dolor Sit Amet. Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A
+            Urna Viverra Morbi. Morbi Donec Amet....
           </p>
 
           <div className={styles.author}>
@@ -57,8 +57,8 @@ export default function category() {
           <h3>* * * * *</h3>
           <h4>Good Work!</h4>
           <p>
-            Lorem Ipsum Dolor Sit Amet. Consectetur Adipiscing Elit. Vitae Nulla
-            Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet....
+            Lorem Ipsum Dolor Sit Amet. Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A
+            Urna Viverra Morbi. Morbi Donec Amet....
           </p>
 
           <div className={styles.author}>

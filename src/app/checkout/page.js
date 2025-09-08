@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "./page.module.css";
-import { categoryData } from "../util/category";
-import Image from "next/image";
-import TotalPrice from "../component/shop_delivery/totalPrice";
+import React from 'react';
+import styles from './page.module.css';
+import { categoryData } from '../util/category';
+import Image from 'next/image';
+import TotalPrice from '../component/shop_delivery/totalPrice';
 
 export default function Checkout() {
   return (
@@ -39,7 +39,7 @@ export default function Checkout() {
             ))}
           </tbody>
         </table>
-       <TotalPrice/>
+        <TotalPrice />
       </div>
     </div>
   );

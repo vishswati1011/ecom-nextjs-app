@@ -1,12 +1,12 @@
-import React from "react";
-import { CiHeart } from "react-icons/ci";
-import styles from "./page.module.css";
-import { findProductById } from "../../../services/product";
-import ProductDetails from "../../component/product/product_details";
-import { FaPlus } from "react-icons/fa";
-import { FaMinus } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
-import ReviewForm from "../../component/customer_review/addYourReview";
+import React from 'react';
+import { CiHeart } from 'react-icons/ci';
+import styles from './page.module.css';
+import { findProductById } from '../../../services/product';
+import ProductDetails from '../../component/product/product_details';
+import { FaPlus } from 'react-icons/fa';
+import { FaMinus } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa';
+import ReviewForm from '../../component/customer_review/addYourReview';
 export default async function Details({ params }) {
   let product = await findProductById(params.id);
 
@@ -21,8 +21,8 @@ export default async function Details({ params }) {
           <div className={styles.details}>
             <h3>{product.name}</h3>
             <p className={styles.star}>
-              {" "}
-              <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />{" "}
+              {' '}
+              <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />{' '}
             </p>
             <p className={styles.price}>{product.price} </p>
             <p className={styles.description}>
@@ -32,40 +32,22 @@ export default async function Details({ params }) {
             <p>Color</p>
             <ul className={styles.list}>
               <li>
-                <div
-                  className={styles.color_div}
-                  style={{ backgroundColor: "red" }}
-                ></div>
+                <div className={styles.color_div} style={{ backgroundColor: 'red' }}></div>
               </li>
               <li>
-                <div
-                  className={styles.color_div}
-                  style={{ backgroundColor: "blue" }}
-                ></div>
+                <div className={styles.color_div} style={{ backgroundColor: 'blue' }}></div>
               </li>
               <li>
-                <div
-                  className={styles.color_div}
-                  style={{ backgroundColor: "green" }}
-                ></div>
+                <div className={styles.color_div} style={{ backgroundColor: 'green' }}></div>
               </li>
               <li>
-                <div
-                  className={styles.color_div}
-                  style={{ backgroundColor: "yellow" }}
-                ></div>
+                <div className={styles.color_div} style={{ backgroundColor: 'yellow' }}></div>
               </li>
               <li>
-                <div
-                  className={styles.color_div}
-                  style={{ backgroundColor: "black" }}
-                ></div>
+                <div className={styles.color_div} style={{ backgroundColor: 'black' }}></div>
               </li>
               <li>
-                <div
-                  className={styles.color_div}
-                  style={{ backgroundColor: "orange" }}
-                ></div>
+                <div className={styles.color_div} style={{ backgroundColor: 'orange' }}></div>
               </li>
             </ul>
 
@@ -91,13 +73,13 @@ export default async function Details({ params }) {
 
             <ul className={styles.list}>
               <li className={styles.add_minus}>
-                {" "}
-                <FaMinus size={10} className={styles.icon} /> &nbsp; 1 &nbsp;{" "}
-                <FaPlus size={10} />{" "}
+                {' '}
+                <FaMinus size={10} className={styles.icon} /> &nbsp; 1 &nbsp;{' '}
+                <FaPlus size={10} />{' '}
               </li>
               <li className={styles.add_cart}>Add to cart</li>
               <li className={styles.size}>
-                {" "}
+                {' '}
                 <CiHeart />
               </li>
             </ul>
@@ -105,7 +87,7 @@ export default async function Details({ params }) {
         </div>
       </div>
       <ProductDetails />
-      <ReviewForm/>
+      <ReviewForm />
     </div>
   );
 }
